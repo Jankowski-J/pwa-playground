@@ -1,0 +1,14 @@
+/node_modules/angular2
+/node_modules/bootstrap
+/node_modules/es6-shim
+/node_modules/express
+/node_modules/jquery
+/node_modules/pug
+/node_modules/reflect-metadata
+/node_modules/require
+/node_modules/reqwest
+/node_modules/rxjs
+/node_modules/zone.js
+/node_modules/.bin/require.cmd
+/node_modules/.bin/require
+/node_modules/.bin

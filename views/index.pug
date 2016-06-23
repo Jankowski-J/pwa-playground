@@ -1,0 +1,29 @@
+html
+    head
+    body
+        div#container
+            canvas#gauge-canvas 'Tomek nie szanuje'
+            img#pic.counter-pic(src='../counter_2.png')
+        div.status-container
+            img#gajger-pic.status-pic(src='../ryj_gajgera_6.png')
+        div.container.inputs
+            div.row.col-xs-9
+                p#respectHelp Wpisz frazę, żeby zobaczyć czy Tomek szanuje:
+            div.row.col-xs-9
+                form.respectForm(action='', onsubmit='checkRespect(event)')
+                    input#phrase.form-control
+            div.row.col-xs-12
+                button#searchButton.btn.btn-primary Sprawdź czy Tomek szanuje
+            div.row.col-xs-12.col-lg-12.mt10
+                p#respectText Tomek jest neutralny
+
+    script(src='../jquery.js')
+    script(src='../reqwest.js')
+    script(src='../bootstrap.js')
+    script(src='../gauge.min.js')
+    script(src='../gaugeController.js')
+    script(src='../gauge_gauge.js')
+    script(src='../addServiceWorker.js')        
+
+    link(rel='stylesheet', href='../bootstrap.css')
+    link(rel='stylesheet', href='../site.css')

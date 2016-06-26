@@ -1,15 +1,24 @@
 html
     head
     body    
-        div.container 
+        div.container
+            div.navbar-collapse
+                    ul.nav.navbar-nav.top-menu
+                        li
+                            a(href='/') Home
+                        li
+                            a Products
             div.row
-                div.col-xs-12 
-                    h2 1
-            
-    script(src='../jquery.js')
-    script(src='../reqwest.js')
-    script(src='../bootstrap.js')
-    script(src='../addGenericServiceWorker.js')
-    
-    link(rel='stylesheet', href='../bootstrap.css')
+                div.col-md-6.product
+                    img(src='/gopro.png').products-pic
+   
+    link(rel='stylesheet', href='../bootstrap.css')    
     link(rel='stylesheet', href='../site.css')
+
+    script(src='../jquery.js')
+    script(src='../bootstrap.js')
+    script(src='../reqwest.js')    
+    //script(src='../addGenericServiceWorker.js')
+
+    
+    

@@ -1,15 +1,15 @@
 this.addEventListener('install', function (event) {
 
-    var durr = fetch('/testviews/cache/1')
-        .then(function (result) {
-            var promise = result.json()
-                .then(function (toCache) {
-                    caches.open('offline')
-                        .then(function (cache) {
-                            cache.addAll(toCache);
-                        });
-                });
-        });
+    // var durr = fetch('/testviews/cache/1')
+    //     .then(function (result) {
+    //         var promise = result.json()
+    //             .then(function (toCache) {
+    //                 caches.open('offline')
+    //                     .then(function (cache) {
+    //                         cache.addAll(toCache);
+    //                     });
+    //             });
+    //     });
     event.waitUntil(
         caches.open('offline').then(function (cache) {
             return cache.addAll([
@@ -18,8 +18,7 @@ this.addEventListener('install', function (event) {
                 '/bootstrap.js',
                 '/sw.js',
                 '/addServiceWorker.js',
-                '/site.css',
-                '/bootstrap.css',
+                '/bootstrap.css'
             ]);
         })
     );

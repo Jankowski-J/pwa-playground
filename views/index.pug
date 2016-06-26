@@ -1,14 +1,21 @@
 html
     head
     body
-        div.container.inputs
-            div.row.col-xs-9
-                p#respectHelp Wpisz frazę, żeby zobaczyć czy Tomek szanuje:
+        div.container
+            nav.navbar.navbar-default
+                div.navbar-collapse
+                    ul.nav.navbar-nav.top-menu
+                        li
+                            a(href='/') Home
+                        li
+                            a Products
+
+    link(rel='stylesheet', href='../bootstrap.css') 
+    link(rel='stylesheet', href='../site.css')
 
     script(src='../jquery.js')
-    script(src='../reqwest.js')
     script(src='../bootstrap.js')
-    script(src='../addServiceWorker.js')        
+    script(src='../reqwest.js')    
+    script(src='../adderviceWorker.js')
 
-    link(rel='stylesheet', href='../bootstrap.css')
-    link(rel='stylesheet', href='../site.css')
+   

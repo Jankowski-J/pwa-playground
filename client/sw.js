@@ -7,7 +7,6 @@ this.addEventListener('install', function (event) {
                 '/bootstrap.js',
                 '/sw.js',
                 '/addServiceWorker.js',
-                '/site.css',
                 '/bootstrap.css',
             ]);
         })
@@ -26,7 +25,7 @@ this.addEventListener('fetch', function (event) {
                 }
                 return fetch(request)
                     .catch(function (error) {
-                        console.log('An error has occured', error)
+                        console.log('An error has occured', error, request)
                     });
             })
     );

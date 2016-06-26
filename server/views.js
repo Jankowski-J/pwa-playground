@@ -4,10 +4,10 @@ module.exports = {
     init: function (app) {
         app.set('view engine', 'pug');
 
-        app.get('/testviews/:viewId', function (req, res) {
-            var viewId = req.params.viewId;
+        app.get('/products/:productId', function (req, res) {
+            var productId = req.params.productId;
 
-            res.render(viewsDir + viewId);
+            res.render(viewsDir + productId);
         });
 
         app.get('/testviews/cache/:viewId', function (req, res) {

@@ -4,10 +4,6 @@ module.exports = {
     init: function (app) {
         app.set('view engine', 'pug');
 
-        app.get('/benis', function (req, res) {
-            res.render(viewsDir + 'benis');
-        });
-
         app.get('/testviews/:viewId', function (req, res) {
             var viewId = req.params.viewId;
 
@@ -33,9 +29,6 @@ module.exports = {
         app.get('/', function (req, res) {
             res.render(viewsDir + 'index');
         });
-    },
-    redirectToErrorPage: function (res) {
-        res.status(404).render(viewsDir + 'benis');
     }
 };
 

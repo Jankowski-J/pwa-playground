@@ -13,21 +13,13 @@ this.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open('offline').then(function (cache) {
             return cache.addAll([
-                '/ryj_gajgera_5.png',
-                '/ryj_gajgera_6.png',
-                '/benis',
                 '/reqwest.js',
-                '/gauge.js',
                 '/jquery.js',
                 '/bootstrap.js',
                 '/sw.js',
-                '/gauge_gauge.js',
-                '/gaugeController.js',
                 '/addServiceWorker.js',
                 '/site.css',
                 '/bootstrap.css',
-                '/gauge.min.js',
-                '/counter_2.png'
             ]);
         })
     );

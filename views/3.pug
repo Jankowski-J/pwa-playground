@@ -20,11 +20,9 @@ html
                 div.row
                     h2 Related products
                 div.col-md-4
-                    a(href='/products/1')
-                        img(src='/gopro.png').products-pic
+                    include ./partials/product_1.pug
                 div.col-md-4
-                    a(href='/products/2')
-                        img(src='/charger.png').products-pic
+                    include ./partials/product_2.pug
    
     link(rel='stylesheet', href='../bootstrap.css')    
     link(rel='stylesheet', href='../site.css')

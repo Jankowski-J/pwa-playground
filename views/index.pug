@@ -15,51 +15,21 @@ html
                         h2 Category 1
                 div.row.products-row
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/1')
-                                img(src='/gopro.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/1')
-                                button.btn-default.btn GoPro, 300 CBL
+                        include ./partials/product_1.pug
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/2')
-                                img(src='/charger.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/2')
-                                button.btn-default.btn GoPro batteries with charger, 150 CBL
+                        include ./partials/product_2.pug
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/3')
-                                img(src='/statyw.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/3')
-                                button.btn-default.btn GoPro tripod, 30 CBL
+                        include ./partials/product_3.pug
             div.row.category-row
                 div.row
                     h2 Category 2
                 div.row.products-row
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/10')
-                                img(src='/atmega.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/10')
-                                button.btn-default.btn Atmega328 microprocessor, 10 CBL
+                        include ./partials/product_10.pug
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/11')
-                                img(src='/plytka.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/11')
-                                button.btn-default.btn Printed circuit board 5 CBL
+                        include ./partials/product_11.pug
                     div.col-md-4
-                        div.row.col-md-12
-                            a(href='/products/12')
-                                img(src='/diody.png').products-pic
-                        div.row.col-md-12.mt10
-                            a(href='/products/12')
-                                button.btn-default.btn LED diode, 10 pcs, 3 CBL
+                        include ./partials/product_12.pug
 
     link(rel='stylesheet', href='../bootstrap.css') 
     link(rel='stylesheet', href='../site.css')

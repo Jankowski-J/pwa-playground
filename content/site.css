@@ -20,4 +20,26 @@ img {
     /*-moz-box-shadow:0 0 20px -7px black;
     -webkit-box-shadow:0 0 20px -7px black;
     box-shadow:0 0 20px -7px black;*/
+    max-height: 300px;
+}
+
+.products-pic {
+    height: 100%;
+}
+
+.products-row {
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    height: 300px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.category-row {
+    /*-moz-box-shadow:0 0 20px -7px black;
+    -webkit-box-shadow:0 0 20px -7px black;
+    box-shadow:0 0 20px -7px black;*/
 }

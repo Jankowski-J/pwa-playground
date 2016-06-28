@@ -1,14 +1,41 @@
 html
     head
     body
-        div.container
-            nav.navbar.navbar-default
-                div.navbar-collapse
-                    ul.nav.navbar-nav.top-menu
+        div.navbar.navbar-inverse.navbar-fixed-top
+            div.container
+                div.navbar-collapse-collapse
+                    ul.nav.navbar-nav
                         li
                             a(href='/') Home
-                        li
-                            a Products
+
+        div.container
+            div.row.category-row
+                div.row.mt60.category-header
+                    div.col-md-4
+                        h2 Category 1
+                div.row.products-row
+                    div.col-md-4
+                        a(href='/products/1')
+                            img(src='/gopro.png').products-pic
+                    div.col-md-4
+                        a(href='/products/2')
+                            img(src='/charger.png').products-pic
+                    div.col-md-4
+                        a(href='/products/3')
+                            img(src='/statyw.jpg').products-pic
+            div.row.category-row
+                div.row
+                    h2 Category 2
+                div.row.products-row
+                    div.col-md-4
+                        a(href='/products/10')
+                            img(src='/atmega.jpg').products-pic
+                    div.col-md-4
+                        a(href='/products/11')
+                            img(src='/plytka.jpg').products-pic
+                    div.col-md-4
+                        a(href='/products/12')
+                            img(src='/diody.jpg').products-pic
 
     link(rel='stylesheet', href='../bootstrap.css') 
     link(rel='stylesheet', href='../site.css')

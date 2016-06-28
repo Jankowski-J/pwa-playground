@@ -10,20 +10,30 @@ module.exports = {
             res.render(viewsDir + productId);
         });
 
-        app.get('/testviews/cache/:viewId', function (req, res) {
+        app.get('/products/cache/:viewId', function (req, res) {
             var viewId = Number(req.params.viewId);
 
             var idsToCache = [];
-            if (viewId < 6) {
-                idsToCache = [1, 2, 3, 4, 5];
+            if (viewId < 4) {
+                idsToCache = [1, 2, 3];
             } else {
-                idsToCache = [6, 7, 8, 9, 10];
+                idsToCache = [10, 11, 12];
             }
 
-            var viewsToCache = idsToCache.map(function (id) {
-                return '/testviews/' + id;
+            var urlsToCache = idsToCache.map(function (id) {
+                return '/products/' + id;
             });
-            res.send(JSON.stringify(viewsToCache, null, '\t'));
+
+            urlsToCache = urlsToCache.concat(idsToCache.map(function(id) {
+                return '/products/cache/' + id;
+            }));
+
+            if(viewId < 4) {
+                urlsToCache.push('/gopro.png', '/charger.png', '/statyw.jpg')
+            } else {
+                urlsToCache.push('/atmega.jpg', '/plytka.jpg', '/diody.jpg');
+            }
+            res.send(JSON.stringify(urlsToCache, null, '\t'));
         });
 
         app.get('/', function (req, res) {

@@ -11,10 +11,10 @@ this.addEventListener('install', function (event) {
                 '/',
                 '/gopro.png', 
                 '/charger.png', 
-                '/statyw.jpg',
-                '/atmega.jpg', 
-                '/plytka.jpg', 
-                '/diody.jpg'
+                '/statyw.png',
+                '/atmega.png', 
+                '/plytka.png', 
+                '/diody.png'
             ]);
         })
     );

@@ -29,9 +29,9 @@ module.exports = {
             }));
 
             if(viewId < 4) {
-                urlsToCache.push('/gopro.png', '/charger.png', '/statyw.jpg')
+                urlsToCache.push('/gopro.png', '/charger.png', '/statyw.png')
             } else {
-                urlsToCache.push('/atmega.jpg', '/plytka.jpg', '/diody.jpg');
+                urlsToCache.push('/atmega.png', '/plytka.png', '/diody.png');
             }
             res.send(JSON.stringify(urlsToCache, null, '\t'));
         });

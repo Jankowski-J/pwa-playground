@@ -43,3 +43,7 @@ img {
     -webkit-box-shadow:0 0 20px -7px black;
     box-shadow:0 0 20px -7px black;*/
 }
+
+.mt10 {
+    margin-top: 10px;
+}

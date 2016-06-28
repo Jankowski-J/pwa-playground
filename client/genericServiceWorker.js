@@ -5,7 +5,6 @@ this.addEventListener('install', function (event) {
                 '/reqwest.js',
                 '/jquery.js',
                 '/bootstrap.js',
-                '/sw.js',
                 '/addServiceWorker.js',
                 '/addGenericServiceWorker.js',
                 '/bootstrap.css',

@@ -5,9 +5,16 @@ this.addEventListener('install', function (event) {
                 '/reqwest.js',
                 '/jquery.js',
                 '/bootstrap.js',
-                '/sw.js',
+                '/rootServiceWorker.js',
                 '/addServiceWorker.js',
                 '/bootstrap.css',
+                '/',
+                '/gopro.png', 
+                '/charger.png', 
+                '/statyw.jpg',
+                '/atmega.jpg', 
+                '/plytka.jpg', 
+                '/diody.jpg'
             ]);
         })
     );
@@ -20,7 +27,6 @@ this.addEventListener('fetch', function (event) {
         caches.match(request)
             .then(function (response) {
                 if (response) {
-                    console.log('returning match');
                     return response;
                 }
                 return fetch(request)

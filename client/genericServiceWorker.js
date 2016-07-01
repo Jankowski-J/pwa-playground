@@ -21,7 +21,6 @@ this.addEventListener('fetch', function (event) {
     var url = request.url;
 
     if (url.indexOf('/products/') !== -1) {
-        console.log(event);
         cacheViews(url);
     }
 
@@ -29,7 +28,7 @@ this.addEventListener('fetch', function (event) {
         caches.match(request)
             .then(function (response) {
                 if (response) {
-                    console.log('returning match');
+                    //console.log('returning match');
                     return response;
                 }
                 return fetch(request)
@@ -52,15 +51,6 @@ var cacheViews = function (url) {
             var promise = result.json()
                 .then(function (toCache) {
                     tryCache(toCache);
-                    // caches.open('views')
-                    //     .then(function (cache) {
-                    //         cache.addAll(toCache);
-                    //         console.log('successfully cached views:');
-                    //         console.log(toCache);
-                    //     })
-                    //     .catch(function (error) {
-                    //         console.log("Coś się popsuło 4", error);
-                    //     });
                 })
         })
         .catch(function (error) {

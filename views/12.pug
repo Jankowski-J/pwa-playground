@@ -1,5 +1,8 @@
 html
     head
+        doctype html
+        title Service workers-powered store
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
     body    
         div.navbar.navbar-inverse.navbar-fixed-top
             div.container
@@ -11,25 +14,25 @@ html
         div.container
             div.row.category-row
                 div.row.mt60.category-header
-                    div.col-md-8
+                    div.col-md-8.col-xs-8
                         h2 LED diode, 10 pcs, 3 CBL
                 div.row.products-row
-                    div.col-md-4
+                    div.col-md-4.col-xs-4
                         img(src='/diody.png').products-pic
             div.row.products-row
                 div.row
                     h2 Related products
-                div.col-md-4
+                div.col-md-4.col-xs-4
                     include ./partials/product_10.pug
-                div.col-md-4
+                div.col-md-4.col-xs-4
                     include ./partials/product_11.pug
    
-    link(rel='stylesheet', href='../bootstrap.css')    
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
     link(rel='stylesheet', href='../site.css')
 
     script(src='../jquery.js')
-    script(src='../bootstrap.js')
-    script(src='../reqwest.js')    
+    script(src='../https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+    script(src='../reqwest.js')
     script(src='../addGenericServiceWorker.js')
 
     

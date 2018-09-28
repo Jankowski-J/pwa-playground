@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Jakub\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jakub\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_service-workers.747480867.00" t="ExcludeRecursive" />
+    <e p="D:\Dev\service-workers" t="IncludeFlat">
+      <e p="node_modules" t="ExcludeRecursive">
+        <e p="@types" t="IncludeRecursive">
+          <e p="babel-types" t="IncludeRecursive" />
+        </e>
+        <e p="angular2" t="IncludeRecursive" />
+        <e p="bootstrap" t="IncludeRecursive" />
+        <e p="emailjs" t="IncludeRecursive" />
+        <e p="express" t="IncludeRecursive" />
+        <e p="jquery" t="IncludeRecursive" />
+        <e p="nodemailer" t="IncludeRecursive" />
+        <e p="pug" t="IncludeRecursive" />
+        <e p="react" t="IncludeRecursive" />
+        <e p="react-jade" t="IncludeRecursive" />
+        <e p="require" t="IncludeRecursive" />
+        <e p="reqwest" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

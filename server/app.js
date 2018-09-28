@@ -1,10 +1,14 @@
 var express = require('express');
 var views = require('./views');
+var zlib = require('zlib');
 var path = require('path');
+var compression = require('compression');
 
 var app = express();
+app.use(compression());
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(express.static(path.join(__dirname, '../content')));
+//app.use(express.static(path.join(__dirname, './manifest.json')));
 
 views.init(app);
 

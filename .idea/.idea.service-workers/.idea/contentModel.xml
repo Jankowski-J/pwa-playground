@@ -10,6 +10,7 @@
         </e>
         <e p="angular2" t="IncludeRecursive" />
         <e p="bootstrap" t="IncludeRecursive" />
+        <e p="compression" t="IncludeRecursive" />
         <e p="emailjs" t="IncludeRecursive" />
         <e p="express" t="IncludeRecursive" />
         <e p="jquery" t="IncludeRecursive" />
@@ -19,6 +20,8 @@
         <e p="react-jade" t="IncludeRecursive" />
         <e p="require" t="IncludeRecursive" />
         <e p="reqwest" t="IncludeRecursive" />
+        <e p="spdy" t="IncludeRecursive" />
+        <e p="zlib" t="IncludeRecursive" />
       </e>
     </e>
   </component>

@@ -16,6 +16,7 @@
     "react-jade": "^2.5.0",
     "require": "^2.4.20",
     "reqwest": "^2.0.5",
+    "spdy": "^3.4.7",
     "zlib": "^1.0.5"
   },
   "devDependencies": {},

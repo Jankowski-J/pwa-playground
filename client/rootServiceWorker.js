@@ -1,13 +1,14 @@
-this.addEventListener('install', function (event) {
+self.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('offline').then(function (cache) {
+        caches.open('offline')
+            .then(function (cache) {
             return cache.addAll([
                 '/reqwest.js',
-                '/jquery.js',
-                '/bootstrap.js',
+                '/jquery-3.1.1.min.js',
+                '/bootstrap.min.js',
                 '/rootServiceWorker.js',
                 '/addServiceWorker.js',
-                '/bootstrap.css',
+                '/bootstrap.min.css',
                 '/',
                 '/gopro.png', 
                 '/charger.png', 
@@ -15,12 +16,14 @@ this.addEventListener('install', function (event) {
                 '/atmega.png', 
                 '/plytka.png', 
                 '/diody.png'
-            ]);
+            ])
+        }).catch(function(err) {
+            console.error("error while caching", err);
         })
     );
 });
 
-this.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
     var request = event.request;
 
     event.respondWith(

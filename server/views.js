@@ -37,7 +37,7 @@ module.exports = {
         });
 
         app.get('/', function (req, res) {
-            res.render(viewsDir + 'index');
+            res.render(viewsDir + 'index.pug');
         });
     }
 };

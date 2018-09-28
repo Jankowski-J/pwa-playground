@@ -13,3 +13,4 @@
 /node_modules/.bin/require
 /node_modules/.bin
 /node_modules
+/.vscode

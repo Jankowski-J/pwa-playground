@@ -1,32 +1,38 @@
 {
-  "name": "service-workers",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "angular2": "^2.0.0-beta.16",
-    "bootstrap": "^3.3.6",
-    "compression": "^1.7.3",
-    "emailjs": "^1.0.4",
-    "express": "^4.13.4",
-    "jquery": "^2.2.3",
-    "nodemailer": "^2.4.1",
-    "pug": "^2.0.0-alpha6",
-    "react": "^0.14.8",
-    "react-jade": "^2.5.0",
-    "require": "^2.4.20",
-    "reqwest": "^2.0.5",
-    "spdy": "^3.4.7",
-    "zlib": "^1.0.5"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node server/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "no"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "service-workers",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"dependencies": {
+		"angular2": "^2.0.0-beta.16",
+		"bootstrap": "^3.3.6",
+		"compression": "^1.7.3",
+		"emailjs": "^1.0.4",
+		"express": "^4.13.4",
+		"jquery": "^2.2.3",
+		"nodemailer": "^2.4.1",
+		"pug": "^2.0.0-alpha6",
+		"react": "^0.14.8",
+		"react-jade": "^2.5.0",
+		"require": "^2.4.20",
+		"reqwest": "^2.0.5",
+		"spdy": "^3.4.7",
+		"zlib": "^1.0.5"
+	},
+	"devDependencies": {
+		
+	},
+	"scripts": {
+		"start": "node server/app.js"
+	},
+	"engines": {
+		"node": ">=4",
+		"npm": ">=5.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "no"
+	},
+	"author": "Jakub Jankowski",
+	"license": "ISC"
 }

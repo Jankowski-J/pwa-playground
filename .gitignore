@@ -14,3 +14,5 @@
 /node_modules/.bin
 /node_modules
 /.vscode
+/**/*idea.service-workers/**
+/.idea/.idea.service-workers/.idea/workspace.xml

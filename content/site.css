@@ -17,9 +17,6 @@ img {
 
 .product {
     width: 50%;
-    /*-moz-box-shadow:0 0 20px -7px black;
-    -webkit-box-shadow:0 0 20px -7px black;
-    box-shadow:0 0 20px -7px black;*/
     max-height: 300px;
 }
 
@@ -31,7 +28,6 @@ img {
     padding-top: 10px;
     margin-top: 10px;
     padding-left: 10px;
-    height: 300px;
 }
 
 .mt60 {
